@@ -1,0 +1,32 @@
+name: SimpleHome
+main: id.kuro.SimpleHome.Main
+version: 1.0
+api-version: 1.16
+
+commands:
+   sethome:
+      description: Set your home
+      usage: /sethome
+      permission: SimpleHome.sethome
+      permission-message: You don't have the permission to use that command.
+   home:
+      description: Teleport to your home
+      usage: /home
+      permission: SimpleHome.home
+      permission-message: You don't have the permission to use that command.
+   spawn:
+      description: Teleport to world spawn point
+      usage: /spawn
+      permission: SimpleHome.spawn
+      permission-message: You don't have the permission to use that command.
+      
+permissions:
+   SimpleHome.sethome:
+      description:  Allows you to use /sethome commands
+      default:  true
+   SimpleHome.home:
+      description:  Allows you to use /home commands
+      default:  true
+   SimpleHome.spawn:
+      description:  Allows you to use /spawn commands
+      default:  true
